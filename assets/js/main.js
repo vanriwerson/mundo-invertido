@@ -1,6 +1,4 @@
-import app from './firebase/app.js';
-
-console.log(app);
+import { subscribeToHellfireClub } from './firebase/hellfire-clube.js';
 
 const txtName = document.getElementById('txtName');
 const txtEmail = document.getElementById('txtEmail');
@@ -17,5 +15,5 @@ btnSubscribe.addEventListener('click', () => {
     character: txtCharacter.value,
   };
 
-  console.log(subscription);
+  subscribeToHellfireClub(subscription);
 });
