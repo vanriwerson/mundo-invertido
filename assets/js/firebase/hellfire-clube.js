@@ -11,5 +11,5 @@ export async function subscribeToHellfireClub(subscription) {
   // Realiza a inserção dos dados
   const docRef = await addDoc(hellfireClubCollection, subscription);
 
-  return window.alert(`Incrição realizada com id ${docRef.id}.`);
+  return window.alert(`Incrição realizada com sucesso! Id ${docRef.id}.`);
 };
