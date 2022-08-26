@@ -1,4 +1,6 @@
-import app from './firebase/app';
+import app from './firebase/app.js';
+
+console.log(app);
 
 const txtName = document.getElementById('txtName');
 const txtEmail = document.getElementById('txtEmail');
@@ -15,4 +17,5 @@ btnSubscribe.addEventListener('click', () => {
     character: txtCharacter.value,
   };
 
+  console.log(subscription);
 });
